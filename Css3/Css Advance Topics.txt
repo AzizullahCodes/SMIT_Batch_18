@@ -1,0 +1,23 @@
+Note: Remaining / Advanced / Important Topics in Css:
+
+01: Line-Height Property Completed.
+03: Add Gradient Color in BG Completed.
+05: Text and Box Shadow Completed.
+06: Css Variables Completed.
+07: Import in Css Completed.
+12: Css Position Completed.
+17: Z-Index Property Completed.
+09: Flex Box Completed.
+10: Responsive Design Completed.
+02: Border Image Property Completed.
+04: Pseudo Classes CSS, Pseudo Elements, ::before and ::after in CSS Completed.
+11: Animation Completed.
+16: Rotate Property Completed.
+17: Transform property Completed.
+08: Transition property Completed.
+13: Inspect Elements Completed.
+14: BootStrap In Completed.
+15: Google Icons Completed.
+
+Revision.
+Css Quiz.

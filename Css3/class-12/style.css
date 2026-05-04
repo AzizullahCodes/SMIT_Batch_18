@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: blink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* Animation */
+@keyframes blink {
+  0% {
+    color: black;
+    background-color: white;
+  }
+
+  25% {
+    color: red;
+    background-color: yellow;
+    font-size: 22px;
+  }
+
+  50% {
+    color: lightblue;
+    background-color: blue;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+
+  75% {
+    color: silver;
+    background-color: goldenrod;
+    font-size: 34px;
+    text-transform: lowercase;
+  }
+
+  100%{
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}

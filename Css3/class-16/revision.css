@@ -1,0 +1,90 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* div { */
+/* background-color: orange; */
+/* height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+/* background-image: linear-gradient(to right, aqua, blue); */
+/* background: linear-gradient(to right, black, yellow); */
+/* background: linear-gradient(to bottom, aqua, blue); */
+/* background: radial-gradient(circle, yellow , black);
+} */
+
+/* a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    border: 1px solid red;
+    border-radius: 2px;
+} */
+
+/* ul:last-child {
+    color: blue;
+} */
+
+/* li:first-child {
+    color: darkblue;
+}
+
+li:last-child {
+    color: red;
+} */
+
+/* li:nth-child(even) {
+    color: blue;
+}
+
+li:nth-child(odd) {
+    color: red;
+}
+
+
+li {
+    text-transform: capitalize;
+} */
+
+/* p {
+    text-align: center;
+    padding: 5px;
+} */
+
+/* p::first-letter {
+    font-size: 30px;
+    font-weight: bold;
+} */
+
+
+/* p::first-line {
+    text-transform: capitalize;
+    color: blue;
+} */
+
+a {
+    text-decoration: none;
+}
+
+a::before {
+    content: '😊';
+}
+
+a::after {
+    content: '😇';
+}

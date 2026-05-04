@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript World </title>
+</head>
+
+<body>
+    <h1> Bidding Game </h1>
+    <h2> Available Coins: <span id="coins"></span> </h2>
+    <h1 id="status"></h1>
+    <h3> User Bid Amount: <span id="user-bid-amount"></span> </h3>
+    <h3>
+        <span> Your Bid: <span id="show-user-bid"></span> </span>
+        <span> Computer Bid: <span id="show-computer-bid"></span> </span>
+    </h3>
+
+
+    <div>
+        <label for="bid-field">
+            Bid No:
+            <input type="number" placeholder="Enter bid no from 1 to 3" id="bid-field" />
+        </label>
+        <br />
+        <label for="amount">
+            Amount:
+            <input type="number" placeholder="Enter amount between 1 to 100" id="amount" />
+        </label>
+        <br />
+        <button onclick="playGame()"> Play Game </button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

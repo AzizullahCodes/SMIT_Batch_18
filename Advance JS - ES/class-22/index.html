@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Advance JS </title>
+
+    <style>
+        ul.section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .li {
+            list-style-type: none;
+            width: 90%;
+        }
+
+        button {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Welcome Back! </h1>
+
+    <ul class="section">
+        <li class="li"><button onclick="renderData('all')"> All </button></li>
+        <li class="li"><button onclick="renderData('Break fast')"> Break Fast </button></li>
+        <li class="li"><button onclick="renderData('Lunch')"> Lunch </button></li>
+        <li class="li"><button onclick="renderData('Dinner')"> Dinner </button></li>
+    </ul>
+
+    <ul id="container"></ul>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

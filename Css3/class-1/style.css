@@ -1,0 +1,37 @@
+/* * {
+  color: blueviolet;
+} */
+
+/* h1,
+h3,
+h4 {
+    color: red;
+} */
+
+/* #head1 {
+    color: gold;
+}
+
+#para {
+    color: green;
+} */
+
+/* .paragraph {
+    color: orange;
+} */
+
+/* p.paragraph {
+  color: black;
+} */
+
+/* .p2 {
+    color: blue;
+} */
+
+/* div > b {
+  color: orange;
+} */
+
+div b {
+  color: red;
+}

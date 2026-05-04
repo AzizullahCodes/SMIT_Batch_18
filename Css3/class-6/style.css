@@ -1,0 +1,60 @@
+/* ul {
+    width: 50%;
+    border: 1px solid black; */
+/* padding: 2px; */
+/* } */
+
+/* li { */
+/* text-transform: capitalize;
+    list-style-type: decimal-leading-zero; */
+/* margin: 3px 0px;
+    list-style-position: inside;
+} */
+
+/* input {
+    width: 40%;
+    padding: 3px;
+    outline: none;
+    border: none; */
+/* border: 1px solid darkblue; */
+/* border-radius: 5px; */
+/* font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    border-bottom-width: 1px;
+    border-bottom-color: darkblue;
+    border-bottom-style: solid;
+} */
+
+/* button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  /* height: 100vh;
+    width: 100%;
+    background-image: url(./images/cover-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+  /* background-position: bottom bottom; */
+}
+
+/* h1 {
+    text-align: center;
+    color: white;
+} */
+
+.div1 {
+  height: 400px;
+  width: 100%;
+  background-color: rebeccapurple;
+}

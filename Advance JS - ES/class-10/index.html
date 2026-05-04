@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Student Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 10px;
+        }
+
+        .logo h1 {
+            color: #0c5da5;
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 14px;
+            color: #444;
+            margin-top: 5px;
+        }
+
+        .portal-title {
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .tabs {
+            display: flex;
+            background: #e9e9e9;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .tabs button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .tabs button.active {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+
+        .card h2 {
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #0c5da5;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            background: #3b5998;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #2f477a;
+        }
+
+        .teacher-btn {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+        }
+
+        .teacher-btn:hover {
+            background: #eaeaea;
+        }
+
+        #section_2 {
+            display: none;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width:480px) {
+            .container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>SMIT</h1>
+            <span>Saylani Mass IT Trainings</span>
+        </div>
+
+        <div class="portal-title">Student Portal</div>
+
+        <div class="tabs">
+            <button onclick="loginHandler()" class="active" id="login">Login</button>
+            <button onclick="createPassHandler()" id="cp">Create Password</button>
+        </div>
+
+        <!-- Section 1 -->
+        <div class="card" id="section_1">
+            <h2>Login</h2>
+            <p>Kindly provide the CNIC number and password used during SMIT course registration.</p>
+
+            <div class="form-group">
+                <label>Email *</label>
+                <input type="email" placeholder="abc@xyz.com" autofocus id="email" />
+            </div>
+
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" placeholder="*****" id="password" />
+            </div>
+
+            <button class="login-btn" onclick="register()">
+                LOGIN
+            </button>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="card" id="section_2">
+            <h2>Create a Password</h2>
+            <p>Kindly provide the CNIC number and DOB used during SMIT course registration.</p>
+
+            <div class="form-group">
+                <label>CNIC *</label>
+                <input type="number" placeholder="Enter CNIC No" />
+            </div>
+
+            <div class="form-group">
+                <label>DOB *</label>
+                <input type="date" />
+            </div>
+
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" placeholder="*****" />
+            </div>
+
+            <button class="login-btn">
+                SUBMIT
+            </button>
+        </div>
+
+        <button class="teacher-btn">Login as teacher</button>
+
+    </div>
+
+    <!-- JS File Integration -->
+    <script src="./app.js"></script>
+</body>
+
+</html>

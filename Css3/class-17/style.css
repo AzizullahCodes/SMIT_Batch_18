@@ -1,0 +1,94 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: blinker;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinker {
+    0% {
+        color: black;
+        background-color: white;
+    }
+
+    25% {
+        color: white;
+        background-color: blue;
+        font-size: 20px;
+    }
+
+    50% {
+        background-color: red;
+        color: yellow;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    75% {
+        color: white;
+        background-color: black;
+        text-transform: uppercase;
+    }
+
+    100% {
+        color: silver;
+        background-color: goldenrod;
+        font-style: italic;
+    }
+} */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: orange;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 600px;
+    /* animation-name: animatedBox;
+    animation-duration: 3s; */
+}
+
+/* @keyframes animatedBox {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 500px;
+    }
+
+    50% {
+        left: 500px;
+        top: 500px;
+    }
+
+    75% {
+        top: 500px;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+} */

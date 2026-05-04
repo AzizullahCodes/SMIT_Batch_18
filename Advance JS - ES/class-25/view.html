@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JS Champ </title>
+</head>
+
+<body>
+    <h1> View User Detials </h1>
+
+    <script>
+        const fetchUserDetails = (uid) => {
+            console.log('User id: ', uid);
+
+            const apiUrl = `https://jsonplaceholder.typicode.com/users/${uid}`;
+            fetch(apiUrl)
+                .then((res) => {
+                    return res?.json();
+                })
+                .then((actualData) => {
+                    console.log(actualData);
+                })
+                .catch((err) => {
+                    console.log('Something wnet wrong while fetching user details: ', err);
+                });
+        };
+
+        const fetchUser = () => {
+            let uid = localStorage.getItem('User Id');
+            uid = JSON.parse(uid);
+            // console.log('User: ', uid);
+            fetchUserDetails(uid)
+        };
+
+        fetchUser();
+    </script>
+</body>
+
+</html>

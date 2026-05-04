@@ -1,0 +1,75 @@
+/* p {
+  border: 10px solid transparent;
+  padding: 5px; 
+  text-align: center;
+  border-image: url('./images/border.png') 20 stretch;
+} */
+
+/* a:hover {
+  color: red;
+  text-transform: capitalize;
+}
+
+a:active {
+  color: blue;
+  text-transform: uppercase;
+}
+
+button:active {
+  color: white;
+  background-color: black;
+}
+
+.input {
+  outline: 0;
+}
+
+.input:focus {
+  border: 1px solid red;
+  border-radius: 2px;
+} */
+
+/* li:first-child {
+  text-transform: capitalize;
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+  text-transform: uppercase;
+} */
+
+/* ul li:nth-child(even) {
+  color: orange;
+}
+
+ul li:nth-child(odd) {
+  color: blue;
+} */
+
+/* p {
+  text-align: center;
+} */
+
+/* p::first-line {
+  font-weight: bold;
+  color: blue;
+} */
+
+/* p::first-letter {
+  font-size: 30px;
+  color: red;
+} */
+
+a {
+  text-decoration: none;
+  /* padding: 5px; */
+}
+
+a::after {
+  content: "😊";
+}
+
+a::before {
+  content: "😆";
+}

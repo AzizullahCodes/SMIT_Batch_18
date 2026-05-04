@@ -1,0 +1,54 @@
+/* * {
+  color: yellow;
+}
+
+body h1 {
+  color: red !important;
+}
+
+h1 {
+  color: blueviolet;
+}
+
+#head {
+  color: blue;
+}
+
+.h1 {
+  color: brown;
+}
+
+.customh1 {
+  color: orange;
+} */
+
+/* div {
+  color: orange;
+}
+
+b {
+  color: blue;
+  color: inherit;
+} */
+
+/* body {
+  background-color: rgb(38, 47, 91);
+}
+
+h1 {
+  color: #8a2061;
+  color: rgb(84, 190, 27);
+} */
+
+.parent {
+  height: 300px;
+  width: 400px;
+  background-color: black;
+}
+
+.child {
+  height: 200px;
+  width: 250px;
+  background-color: yellow;
+  opacity: 0.7;
+}

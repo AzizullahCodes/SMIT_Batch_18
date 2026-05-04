@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMIT Student Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f2f4f8, #e6ebf2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 30px 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo h1 {
+            color: #1e73be;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        .logo p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f1f3f7;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .tabs button.active {
+            background: #ffffff;
+            color: #1e73be;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-box h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-box p {
+            font-size: 13px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #dcdfe6;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #1e73be;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30, 115, 190, 0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #1e73be;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #155a96;
+        }
+
+        .teacher-login {
+            margin-top: 18px;
+            text-align: center;
+        }
+
+        .teacher-login a {
+            text-decoration: none;
+            color: #1e73be;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .teacher-login a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 18px;
+            }
+
+            .logo h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>SMIT</h1>
+            <p>Student Portal</p>
+        </div>
+
+        <div class="tabs">
+            <button class="active">Login</button>
+            <button>Create Password</button>
+        </div>
+
+        <div class="form-box">
+            <h2>Login</h2>
+            <p>Kindly provide the CNIC number and password used during SMIT course registration.</p>
+
+            <div class="form-group">
+                <label>CNIC *</label>
+                <input type="text" placeholder="Enter your CNIC">
+            </div>
+
+            <div class="form-group">
+                <label>Password *</label>
+                <input type="password" placeholder="Enter your password">
+            </div>
+
+            <button class="btn">LOGIN</button>
+
+            <div class="teacher-login">
+                <a href="#">Login as teacher</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

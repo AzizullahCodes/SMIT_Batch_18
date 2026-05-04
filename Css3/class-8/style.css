@@ -1,0 +1,101 @@
+/* :root {
+  --blue-color: blue;
+  --font25: 25px;
+  --capital : capitalize;
+}
+
+h1 {
+  color: var(--blue-color);
+  text-transform: var(--capital);
+}
+
+p {
+  color: var(--blue-color);
+  font-size: var(--font25);
+  text-transform: var(--capital);
+}
+
+span {
+  font-size: 25px;
+  color: var(--blue-color);
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* div {
+  height: 50vh;
+  width: 100%; */
+/* background-color: yellow; */
+
+/* Left to right */
+/* background-image: linear-gradient(to right, yellow, black); */
+/* background-image: linear-gradient(to right, blue, aqua); */
+
+/* Top to bottom */
+/* background-image: linear-gradient(to bottom, yellow, black); */
+/* background-image: linear-gradient(to bottom, blue, aqua); */
+
+/* background-image: radial-gradient(circle, blue, aqua); */
+/* } */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .box {
+  height: 70px;
+  width: 70px;
+  background-color: orange; */
+/* position: relative; */
+/* top: 20px; */
+/* left: 20px; */
+/* } */
+
+ul {
+  background-color: orange;
+  text-align: center;
+  height: 15vh;
+  width: 100%;
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 0px 10px;
+  line-height: 15vh;
+}
+
+/*
+  position: static; Done
+  position: fixed; Done
+  position: sticky; Done
+  position: relative;
+  position: absolute;
+*/
+
+p {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* .p1 {
+  padding-top: 8%
+} */
+
+h1,
+h2 {
+  /* background-color: yellow; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  /* margin: 0px 10px; */
+  margin: 10px;
+}

@@ -1,0 +1,12 @@
+:root {
+  --redCol: red;
+  --dBlue: darkblue;
+  --capitalize: capitalize;
+}
+
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--redCol);
+  text-transform: capitalize;
+}

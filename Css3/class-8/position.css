@@ -1,0 +1,60 @@
+/* .container { */
+/* background-color: lightgreen; */
+/* }
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5 {
+  background-color: orange;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+} */
+
+/* .box4 { */
+/* background-color: lightblue; */
+/* position: relative; */
+/* top: 10px; */
+/* left: 20px; */
+/* position: absolute; */
+/* top: 30px; */
+/* left: 40px; */
+/* right: 0; */
+/* } */
+
+/* .box1 {
+  background-color: orange;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.box2 {
+  background-color: lightblue;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+} */
+
+@import url("./header.css");
+
+p {
+    color: var(--dBlue);
+    text-transform: var(--capitalize);
+}
