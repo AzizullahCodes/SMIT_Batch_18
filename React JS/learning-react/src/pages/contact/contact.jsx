@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "../../components/header/header";
 
-const AboutScreen = () => {
+const ContactScreen = () => {
     return (
-        <Header screenName="About" id='1' />
+        <Header screenName="Contact" />
     );
 };
 
-export default AboutScreen;
+export default ContactScreen;

@@ -37,11 +37,11 @@ import users from "../../utils/dummy-users";
 
 const Home = () => {
 
-  console.log('Users: ', users);
+  // console.log('Users: ', users);
 
   return (
     <div>
-      <Header />
+      <Header screenName="Home" />
       <ul>
         {
           users?.map((item, index) => {

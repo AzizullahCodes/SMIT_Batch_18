@@ -1,9 +1,11 @@
 import React from 'react';
 import "./header.css";
 
-const Header = () => {
+const Header = (props) => {
+    console.log('Props of header component: ', props);
+    const { screenName } = props;
     return (
-        <h1 className='header'> Header component! </h1>
+        <h1 className='header'> {`${screenName} screen`} </h1>
     );
 };
 
