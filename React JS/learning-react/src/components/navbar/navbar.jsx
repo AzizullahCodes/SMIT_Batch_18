@@ -40,6 +40,10 @@ const Navbar = () => {
                         <MDBNavbarLink>
                             <Link to={'/contact'} className='link'> Contact </Link>
                         </MDBNavbarLink>
+
+                        <MDBNavbarLink>
+                            <Link to={'/users'} className='link'> Users </Link>
+                        </MDBNavbarLink>
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBContainer>

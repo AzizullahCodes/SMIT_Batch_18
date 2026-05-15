@@ -37,18 +37,20 @@ import users from "../../utils/dummy-users";
 
 const Home = () => {
 
-  // console.log('Users: ', users);
+  const isEdit = true;
 
   return (
     <div>
       <Header screenName="Home" />
-      <ul>
-        {
-          users?.map((item, index) => {
-            return <li key={index}> {item.userName} </li>
-          })
-        }
-      </ul>
+      <h1> Conditional rendering in React! </h1>
+
+      {
+        (isEdit)
+        ?
+        ( <h3> Success </h3> )
+        :
+        ( <h3> Not Success </h3> )
+      }
     </div>
   );
 };
