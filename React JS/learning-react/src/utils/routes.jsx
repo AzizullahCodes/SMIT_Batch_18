@@ -6,6 +6,7 @@ import About from "../pages/about/about";
 import Contact from '../pages/contact/contact';
 import Users from '../pages/users/users';
 import CustomUser from "../pages/user/user";
+import Todo from '../pages/todo/todo';
 
 const AppRoutes = () => {
     return (
@@ -15,6 +16,7 @@ const AppRoutes = () => {
             <Route element={<Contact />} path='/contact' />
             <Route element={<Users />} path='/users' />
             <Route element={<CustomUser />} path='/users/:uid/details' />
+            <Route element={<Todo />} path='/todo' />
         </Routes>
     );
 };
