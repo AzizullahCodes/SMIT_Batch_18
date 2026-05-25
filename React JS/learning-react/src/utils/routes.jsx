@@ -7,6 +7,8 @@ import Contact from '../pages/contact/contact';
 import Users from '../pages/users/users';
 import CustomUser from "../pages/user/user";
 import Todo from '../pages/todo/todo';
+import Services from '../pages/services/services';
+import Slider from '../pages/slider/slider';
 
 const AppRoutes = () => {
     return (
@@ -17,6 +19,8 @@ const AppRoutes = () => {
             <Route element={<Users />} path='/users' />
             <Route element={<CustomUser />} path='/users/:uid/details' />
             <Route element={<Todo />} path='/todo' />
+            <Route element={<Services />} path='/services' />
+            <Route element={<Slider />} path='/slider' />
         </Routes>
     );
 };

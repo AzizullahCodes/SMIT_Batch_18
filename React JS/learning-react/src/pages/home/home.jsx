@@ -32,25 +32,68 @@ import Header from "../../components/header/header";
 
 
 
-import React from 'react';
-import users from "../../utils/dummy-users";
+// import React from 'react';
+// import users from "../../utils/dummy-users";
+
+// const Home = () => {
+
+//   const isEdit = true;
+
+//   return (
+//     <div>
+//       <Header screenName="Home" />
+//       <h1> Conditional rendering in React! </h1>
+
+//       {
+//         (isEdit)
+//         ?
+//         ( <h3> Success </h3> )
+//         :
+//         ( <h3> Not Success </h3> )
+//       }
+//     </div>
+//   );
+// };
+
+// export default Home;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useState } from 'react';
+import Navbar from "../../components/navbar/navbar";
 
 const Home = () => {
-
-  const isEdit = true;
+  const [count, setCount] = useState(0);
 
   return (
     <div>
       <Header screenName="Home" />
-      <h1> Conditional rendering in React! </h1>
+      <Navbar />
+      <h1> Performance Optimization in React! </h1>
+      <h2> {count} </h2>
 
-      {
-        (isEdit)
-        ?
-        ( <h3> Success </h3> )
-        :
-        ( <h3> Not Success </h3> )
-      }
+      <button onClick={() => setCount(count + 1)}> Testing </button>
     </div>
   );
 };

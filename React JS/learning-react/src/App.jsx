@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter } from "react-router";
 import AppRoutes from './utils/routes';
-import Navbar from './components/navbar/navbar';
+// import Navbar from './components/navbar/navbar';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
       <AppRoutes />
     </BrowserRouter>
   );

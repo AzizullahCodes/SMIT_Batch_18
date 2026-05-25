@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, memo } from 'react';
 import {
     MDBContainer,
     MDBNavbar,
@@ -14,6 +14,7 @@ import { Link } from 'react-router';
 import "./navbar.css";
 
 const Navbar = () => {
+    console.log('Navbar component is rendering!');
     const [openNavSecond, setOpenNavSecond] = useState(false);
 
     return (
@@ -48,6 +49,14 @@ const Navbar = () => {
                         <MDBNavbarLink>
                             <Link to={'/todo'} className='link'> Todo </Link>
                         </MDBNavbarLink>
+
+                        <MDBNavbarLink>
+                            <Link to={'/services'} className='link'> Services </Link>
+                        </MDBNavbarLink>
+
+                        <MDBNavbarLink>
+                            <Link to={'/slider'} className='link'> Slider </Link>
+                        </MDBNavbarLink>
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBContainer>
@@ -55,4 +64,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default memo(Navbar);
