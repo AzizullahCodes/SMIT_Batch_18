@@ -14,7 +14,7 @@ import { Link } from 'react-router';
 import "./navbar.css";
 
 const Navbar = () => {
-    console.log('Navbar component is rendering!');
+    // console.log('Navbar component is rendering!');
     const [openNavSecond, setOpenNavSecond] = useState(false);
 
     return (

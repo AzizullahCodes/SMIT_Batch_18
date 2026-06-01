@@ -9,10 +9,14 @@ import CustomUser from "../pages/user/user";
 import Todo from '../pages/todo/todo';
 import Services from '../pages/services/services';
 import Slider from '../pages/slider/slider';
+import Login from "../pages/login/login";
+import SignUp from "../pages/signup/signup";
 
 const AppRoutes = () => {
     return (
         <Routes>
+            <Route element={<Login />} path='/login' />
+            <Route element={<SignUp />} path='/signup' />
             <Route element={<Home />} path='/' />
             <Route element={<About />} path='/about' />
             <Route element={<Contact />} path='/contact' />

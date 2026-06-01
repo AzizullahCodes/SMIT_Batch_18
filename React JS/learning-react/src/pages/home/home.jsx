@@ -89,7 +89,7 @@ const Home = () => {
   return (
     <div>
       <Header screenName="Home" />
-      <Navbar />
+      {/* <Navbar /> */}
       <h1> Performance Optimization in React! </h1>
       <h2> {count} </h2>
 
