@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router";
 
+import ProtectedRouteCom from '../pages/protected-route-com/protected-route-com';
 import Home from "../pages/home/home";
 import About from "../pages/about/about";
 import Contact from '../pages/contact/contact';
@@ -15,16 +16,21 @@ import SignUp from "../pages/signup/signup";
 const AppRoutes = () => {
     return (
         <Routes>
+            {/* Public routes */}
             <Route element={<Login />} path='/login' />
             <Route element={<SignUp />} path='/signup' />
-            <Route element={<Home />} path='/' />
-            <Route element={<About />} path='/about' />
-            <Route element={<Contact />} path='/contact' />
-            <Route element={<Users />} path='/users' />
-            <Route element={<CustomUser />} path='/users/:uid/details' />
-            <Route element={<Todo />} path='/todo' />
-            <Route element={<Services />} path='/services' />
-            <Route element={<Slider />} path='/slider' />
+
+            {/* Private routes */}
+            <Route element={<ProtectedRouteCom />}>
+                <Route element={<Home />} path='/' />
+                <Route element={<About />} path='/about' />
+                <Route element={<Contact />} path='/contact' />
+                <Route element={<Users />} path='/users' />
+                <Route element={<CustomUser />} path='/users/:uid/details' />
+                <Route element={<Todo />} path='/todo' />
+                <Route element={<Services />} path='/services' />
+                <Route element={<Slider />} path='/slider' />
+            </Route>
         </Routes>
     );
 };
