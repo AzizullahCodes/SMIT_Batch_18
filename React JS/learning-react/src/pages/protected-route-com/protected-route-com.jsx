@@ -1,11 +1,21 @@
 import React from 'react';
-import { Outlet, Navigate } from 'react-router';
+import { Outlet, Navigate, useLocation } from 'react-router';
+import Navbar from '../../components/navbar/navbar';
 
 const ProtectedRouteCom = () => {
 
-    const isAuthenticated = JSON.parse(localStorage.getItem('userAuthStatus')) || false;
+    const { pathname } = useLocation();
+    console.log('Path: ', pathname);
 
-    return isAuthenticated ? <Outlet /> : <Navigate to={'/login'} replace />
+    const isAuthenticated = JSON.parse(localStorage.getItem('userAuthStatus')) || false;
+    console.log('User Auth Status: ', isAuthenticated);
+
+    return isAuthenticated ?
+        <>
+            <Navbar />
+            <Outlet />
+        </>
+        : <Navigate to={'/login'} replace />
 };
 
 export default ProtectedRouteCom;
