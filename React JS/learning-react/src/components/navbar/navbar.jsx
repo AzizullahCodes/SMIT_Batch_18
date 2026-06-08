@@ -57,6 +57,10 @@ const Navbar = () => {
                         <MDBNavbarLink>
                             <Link to={'/slider'} className='link'> Slider </Link>
                         </MDBNavbarLink>
+
+                        <MDBNavbarLink>
+                            <Link to={'/bulb'} className='link'> Bulb </Link>
+                        </MDBNavbarLink>
                     </MDBNavbarNav>
                 </MDBCollapse>
             </MDBContainer>

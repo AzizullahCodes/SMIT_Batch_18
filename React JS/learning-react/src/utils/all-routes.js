@@ -8,6 +8,7 @@ const privateRoutesData = [
   "/todo",
   "/services",
   "/slider",
+  "/bulb"
 ];
 
 export { publicRoutesData, privateRoutesData };

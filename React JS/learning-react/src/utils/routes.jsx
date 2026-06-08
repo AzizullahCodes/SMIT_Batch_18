@@ -12,6 +12,7 @@ import Services from '../pages/services/services';
 import Slider from '../pages/slider/slider';
 import Login from "../pages/login/login";
 import SignUp from "../pages/signup/signup";
+import Bulb from '../pages/bulb/bulb';
 
 const AppRoutes = () => {
     return (
@@ -30,6 +31,7 @@ const AppRoutes = () => {
                 <Route element={<Todo />} path='/todo' />
                 <Route element={<Services />} path='/services' />
                 <Route element={<Slider />} path='/slider' />
+                <Route element={<Bulb />} path='/bulb' />
             </Route>
         </Routes>
     );
