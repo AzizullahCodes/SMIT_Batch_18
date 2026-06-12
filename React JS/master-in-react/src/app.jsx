@@ -4,6 +4,7 @@ import DashboardLayout from './screens/dashboard/dashboard';
 import Profile from "./screens/dashboard/profile/profile";
 import Contact from "./screens/dashboard/contact/contact";
 import ProductsScreen from './screens/products/products';
+import Users from './screens/users/users';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path='contact' element={<Contact />} />
         </Route>
         <Route path='/products' element={<ProductsScreen />} />
+        <Route path='/users' element={<Users />} />
       </Routes>
     </BrowserRouter>
   );
