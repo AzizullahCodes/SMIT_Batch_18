@@ -19,6 +19,12 @@ const Navbar = () => {
         <li>
             <Link href={"/users"}> Users </Link>
         </li>
+        <li>
+            <Link href={"/signup"}> Sign Up </Link>
+        </li>
+        <li>
+            <Link href={"/login"}> Log In </Link>
+        </li>
     </ul>
   );
 };

@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 
 const ViewUserScreen = () => {
     const { uid } = useParams();
-    console.log(uid);
+    // console.log(uid);
 
     return (
         <div>
