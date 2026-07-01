@@ -1,8 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import { app, auth } from "@/src/utils/firebase";
+import { auth, db } from "@/src/utils/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
+import { addDoc, collection } from 'firebase/firestore';
 
 const SignUp = () => {
 
@@ -20,11 +21,23 @@ const SignUp = () => {
         );
         console.log('User res: ', saveUser);
 
+        const obj = {
+            uid: saveUser?.user?.uid,
+            email: formStates.email,
+            password: btoa(formStates.password)
+        }
+
+        // Saving data in DB...!
+        if (saveUser) {
+            const saveUser = await addDoc(collection(db, 'Users'), obj);
+            console.log('User saved: ', saveUser);
+        };
+
         setFormStates({
             email: "",
             password: ""
         });
-    }
+    };
 
     return (
         <div>
@@ -49,4 +62,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default SignUp;

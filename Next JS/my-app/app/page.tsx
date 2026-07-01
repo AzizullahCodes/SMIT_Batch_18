@@ -1,17 +1,28 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from '@/src/utils/firebase';
 
 const NextApp = () => {
 
-  const handleGreet = () => {
-    console.log('Hello Next!');
-  };
+  useEffect(() => {
+    const fetchCurrentUser = () => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // console.log('Auth user: ', user);
+        }
+
+        else console.log('No user is available!');
+      });
+    };
+
+    fetchCurrentUser();
+  }, []);
 
   return (
     <div>
       <h1> Welcome to Next JS! </h1>
-      <button onClick={handleGreet}> Click Me </button>
     </div>
   );
 };
