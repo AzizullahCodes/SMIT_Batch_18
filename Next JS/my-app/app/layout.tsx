@@ -10,7 +10,7 @@ const RootLayout = ({
       lang="en"
     >
       <body>
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

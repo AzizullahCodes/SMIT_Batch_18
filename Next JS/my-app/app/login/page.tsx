@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { auth } from "@/src/utils/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { setCookie } from 'cookies-next';
 
 const LogIn = () => {
 
@@ -18,6 +19,14 @@ const LogIn = () => {
             formStates.password
         );
         console.log('Login success: ', res);
+
+        const tokenVal = await res.user.getIdToken();
+        console.log('Token:', tokenVal);
+
+        // Saving token in cookie...!
+        setCookie('token', tokenVal, { maxAge: 60 * 60 * 3 });
+
+        window.location.reload();
     };
 
     return (

@@ -20,6 +20,9 @@ const Navbar = () => {
             <Link href={"/users"}> Users </Link>
         </li>
         <li>
+            <Link href={"/services"}> Services </Link>
+        </li>
+        <li>
             <Link href={"/signup"}> Sign Up </Link>
         </li>
         <li>
