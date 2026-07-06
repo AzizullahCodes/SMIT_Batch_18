@@ -1,19 +1,35 @@
 "use client";
 
 import React, { useEffect } from 'react';
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from '@/src/utils/firebase';
+import { getCookie, deleteCookie } from 'cookies-next';
+import Navbar from '@/src/components/navbar/navbar';
 
 const NextApp = () => {
 
   useEffect(() => {
     const fetchCurrentUser = () => {
-      onAuthStateChanged(auth, (user) => {
+      onAuthStateChanged(auth, async (user) => {
         if (user) {
-          // console.log('Auth user: ', user);
+          const authToken = await user.getIdToken();
+          const fetchSavedToken = getCookie('token');
+
+          if (authToken != fetchSavedToken) {
+            await signOut(auth);
+            deleteCookie('token');
+            window.location.reload();
+          }
+
+          else console.log('Token is valid!');
         }
 
-        else console.log('No user is available!');
+        else {
+          console.log('No user is available!');
+          await signOut(auth);
+          deleteCookie('token');
+          window.location.reload();
+        }
       });
     };
 
@@ -22,6 +38,7 @@ const NextApp = () => {
 
   return (
     <div>
+      <Navbar />
       <h1> Welcome to Next JS! </h1>
     </div>
   );

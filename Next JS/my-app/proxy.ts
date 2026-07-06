@@ -4,11 +4,11 @@ import { publicRoutes, privateRoutes } from "./src/utils/routes";
 export const proxy = (req: NextRequest) => {
 
     const cookieVal = req.cookies.get('token')?.value
-    console.log('Cookie:', cookieVal);
+    // console.log('Cookie:', cookieVal);
 
     const path = req.nextUrl.pathname;
-    console.log('Path:', path);
-    console.log('Full Url:', req.url);
+    // console.log('Path:', path);
+    // console.log('Full Url:', req.url);
 
     if (cookieVal && publicRoutes.includes(path)) {
         console.log('Accessing public routes');

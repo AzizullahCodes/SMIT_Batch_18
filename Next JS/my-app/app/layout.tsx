@@ -1,5 +1,3 @@
-import Navbar from "@/src/components/navbar/navbar";
-
 const RootLayout = ({
   children,
 }: Readonly<{
@@ -10,7 +8,6 @@ const RootLayout = ({
       lang="en"
     >
       <body>
-        {/* <Navbar /> */}
         {children}
       </body>
     </html>
